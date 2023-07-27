@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MacBook Air M2 2022</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='assets/style.css'>
+</head>
+<body>
+    <header>
+        <div class="jumbotron center">
+            <h1>MacBook Air</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#deskripsi">Deskripsi</a></li>
+                <li><a href="#spesifikasi">Spesifikasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content" class="card">
+            <article id="produk">
+                <section class="produk-row">
+                    <img src="assets/images/macbook_air_m2_midnight.webp" class="produk-main-img">
+                    <div class="produk-header-content">
+                        <h1 id="produk-title">MacBook Air M2 (2022)</h1>
+                        <div class="produk-row row-label">
+                            <div class="produk-col">
+                                <div class="produk-row col-label">
+                                    <img src="assets/images/Sucess.png" class="image-label">
+                                    <p class="text-label">Stock <br>Tersedia</p>
+                                </div>
+                            </div>
+                            <div class="produk-col">
+                                <div class="produk-row col-label">
+                                    <img src="assets/images/Free-Ongkir.png" class="image-label">
+                                    <p class="text-label">Bebas Biaya <br>Pengiriman</p>
+                                </div>
+                            </div>
+                            <div class="produk-col">
+                                <div class="produk-row col-label">
+                                    <img src="assets/images/Cicilan.png" class="image-label">
+                                    <p class="text-label">Cicilan 0% Hingga <br>12 Bulan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-label">
+                            <h4>Warna: <span id="warna"></span> </h3>
+                            <div class="produk-row">
+                                <div class="produk-style-col">
+                                    <input type="radio" id="midnight" name="color" value="Midnight" onclick="updateColor(this.value)">
+                                    <label for="Midnight">Midnight</label>
+                                </div>
+                                <div class="produk-style-col">
+                                    <input type="radio" id="silver" name="color" value="Silver" onclick="updateColor(this.value)">
+                                    <label for="Silver">Silver</label>
+                                </div>
+                                <div class="produk-style-col">
+                                    <input type="radio" id="starlight" name="color" value="Starlight" onclick="updateColor(this.value)">
+                                    <label for="Starlight">Starlight</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="spacegrey" name="color" value="Spacegrey" onclick="updateColor(this.value)">
+                                    <label for="Spacegrey">Space Grey</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-label">
+                            <h4>Penyimpanan: <span id="penyimpanan"></span> </h3>
+                            <div class="produk-row">
+                                <div class="produk-style-col">
+                                    <input type="radio" id="256" name="storage" value="256 GB" onclick="updateStorage(this.value)">
+                                    <label for="256 GB">256 GB</label>
+                                </div>
+                                <div class="produk-style-col">
+                                    <input type="radio" id="512" name="storage" value="512 GB" onclick="updateStorage(this.value)">
+                                    <label for="512 GB">512 GB</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-label">
+                            <p class="decription">
+                                Bertenaga super berkat chip M2 generasi berikutnya, MacBook Air yang didesain 
+                                ulang menggabungkan performa andal dengan kekuatan baterai hingga 18 jam ke dalam 
+                                penutup berbahan aluminium yang luar biasa tipis.
+                            </p>
+                        </div>
+                    </div>
+                </section> 
+            </article>
+            <article id="deskripsi" class="produk-description">
+                <h2>Deskripsi</h2>
+                <p>
+                    Bertenaga super berkat chip M2 generasi berikutnya, MacBook Air yang didesain ulang 
+                    menggabungkan performa andal dengan kekuatan baterai hingga 18 jam ke dalam penutup 
+                    berbahan aluminium yang luar biasa tipis
+                </p>
+                <ul>
+                    <li>Chip M2 dengan performa CPU, GPU, dan pembelajaran mesin generasi berikutnya</li>
+                    <li>CPU 8-core dan GPU hingga 10-core yang lebih cepat untuk menjalankan berbagai tugas kompleks</li>
+                    <li>Neural Engine 16-core untuk berbagai tugas pembelajaran mesin canggih</li>
+                    <li>Memori terintegrasi lebih cepat hingga 24 GB menjadikan segala yang Anda lakukan terasa lancar</li>
+                    <li>Penerapan filter dan efek gambar hingga 20 persen lebih cepat</li>
+                    <li>Pengeditan garis waktu video kompleks hingga 40 persen lebih cepat</li>
+                    <li>Lakukan banyak hal sepanjang hari dengan kekuatan baterai hingga 18 jam</li>
+                    <li>Desain tanpa kipas untuk pengoperasian yang senyap</li>
+                    <li>Layar Liquid Retina 13,6 inci dengan kecerahan 500 nit dan warna luas P3 untuk gambar yang cemerlang dan detail luar biasa</li>
+                    <li>Berbagi konten dengan mulus antara iPhone dan Mac</li>
+                    <li>Port pengisian daya MagSafe, dua port Thunderbolt, dan jek headphone</li>
+                    <li>Magic Keyboard dengan lampu latar dan Touch ID untuk membuka kunci dan melakukan pembayaran dengan aman</li>
+                    <li>Koneksi nirkabel Wi-Fi 6 yang kencang</li>
+                    <li>Penyimpanan SSD super cepat membuka aplikasi dan file dalam sekejap</li>
+                    <li>macOS Monterey memungkinkan Anda terhubung, berbagi, dan berkreasi dengan cara yang benar-benar baru — di semua perangkat Apple Anda</li>
+                    <li>Tersedia dalam warna midnight, starlight, abu-abu, dan perak</li>
+                </ul>
+            </article>
+            <article id="spesifikasi" class="produk-description">
+                <h2>Spesifikasi</h2>
+                <table>
+                    <tr>
+                        <td class="table-col-1">Brand</td>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Warna</td>
+                        <td><span id="warna">Midnight</span></td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Memori</td>
+                        <td>8 GB</td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Penyimpanan</td>
+                        <td><span id="penyimpanan">256 GB</span></td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Prosesor</td>
+                        <td>Apple M2 Chip (CPU 8-Core, GPU 8-Core)</td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Ukuran Layar</td>
+                        <td>13.6 inci</td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Kamera</td>
+                        <td>Kamera FaceTime HD 1080p <br>Prosesor sinyal gambar canggih menggunakan video komputasional</td>
+                    </tr>
+                    <tr>
+                        <td class="table-col-1">Ukuran dan Berat</td>
+                        <td>
+                            Tinggi: 1,13 cm<br>
+                            Lebar: 30,41 cm<br>
+                            Tebal: 21,5 cm<br>
+                            Berat: 1,24 kg
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </div>
+        
+        <aside>
+            <article class="card">
+                <header>
+                    <h2 class="price">Rp.<span>20.999.000</span></h2>
+                    <button class="button keranjang">Tambah Ke Keranjang</button>
+                    <button class="button toko">Ambil Di Toko</button>
+                </header>
+            </article>
+            <article class="card profile">
+                <header>
+                    <img src="assets/images/profile.jpg" width="200" style="border-radius: 50%;">
+                    <h3>M Hardi Raiz</h3>
+                    <p>raizhardi@gmail.com</p>
+                </header>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>COPYRIGHT &#169; 2022, IBOX. ALL RIGHTS RESERVED</p>
+    </footer>
+<script src="assets/product.js"></script>
+</body>
+</html>

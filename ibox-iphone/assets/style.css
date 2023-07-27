@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: hsla(348, 97%, 63%, 0.65);
+    --secondary: hsla(230, 96%, 62%, 0.65);
+    --dark: #232b2b;
+    --grey: #5a6268;
+}
+
+* {
+    box-sizing: border-box;
+    letter-spacing: .5px;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+header {
+    display: inline;
+    z-index: 100;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: var(--dark);
+    text-align: center;
+    font-weight: 500;
+    font-size: 8px;
+}
+
+nav {
+    background-color: var(--dark);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+                url('images/mac_ipad_ipod_hero.png') no-repeat center center / contain;
+    height: 300px;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produk-main-img {
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+#produk-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 15px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.produk-row {
+    display: flex;
+    /* justify-content: start; */
+    flex-direction: row;
+}
+
+#produk h4 {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#produk input[type='radio'] {
+    cursor: pointer;
+}
+
+#produk label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.produk-col {
+    display: flex;
+    flex-grow: 1;
+}
+
+.produk-header-content {
+    padding-left: 15px;
+    flex-grow: 5;
+}
+
+.row-label {
+    margin: 18px 0 0 0;
+}
+
+.col-label {
+    display: flex;
+    align-items: center;
+}
+
+.produk-style-col {
+    margin-right: 12px;
+}
+
+.image-label {
+    width: 18px;
+    height: 18px;
+}
+
+.text-label {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.produk-description p, .produk-description li, 
+.decription {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.produk-description {
+    margin-top: 18px;
+}
+
+.produk-description h2 {
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#spesifikasi table {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.table-col-1 {
+    display: flex;
+    align-items: start;
+    margin-right: 8px;
+}
+
+.button {
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    font-size: 600;
+    margin-top: 13px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.keranjang {
+    background-color: var(--dark);
+}
+
+.toko {
+    background-color: var(--grey);
+}
+
+.profile {
+    margin-top: 10px;
+}
+
+.profile img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.profile h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.profile p {
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    #content{
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .jumbotron h1 {
+        font-size: 48px;
+    }
+    .produk-main-img {
+        display: none;
+    }
+    .produk-header-content {
+        padding: 0;
+    }
+}
